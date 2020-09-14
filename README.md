@@ -34,6 +34,11 @@ function the(mode)ValueBetween(a,b) {
 }
 ```
 
+## Bugs
+
+1. 函数调用、声明样的字符串也会被编译；
+2. 参数括号内不能解引用(derefrence)。
+
 ## 实现 How to
 
 将函数名内部的括号`(para)`替换为`__x__`，参数列表依次添加到末尾。
