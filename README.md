@@ -1,6 +1,6 @@
 # mnl.js
 
-**仿自然语言 JS 函数（仿生函数命名法）**
+**JS 仿生函数命名法**
 
 **Mock Natural Language JS Function**
 
