@@ -34,7 +34,7 @@ function readSourceCodesFrom(directory) {
 function compile(sourceCode) {
     // TODO: 考虑derefrence的影响 myHeart.join(', ') - 杨子涵 <yang.zihan@columbia.edu>
     // TODO: 考虑字符串的影响 - 杨子涵 <yang.zihan@columbia.edu>
-    const nameInSourceCodes = /(\w*\([\w\,\s'"`\(\)\.]*?\)\w*)+/gm;
+    const nameInSourceCodes = /(\w*\([\w\,\s'"`\(\)]*?\)\w*)+/gm;
     let ans = sourceCode.replace(nameInSourceCodes, nameAfterCompiling);
     return ans;
 }
