@@ -1,0 +1,10 @@
+let myHeart = ['kind', 'evil', 'happy'];
+
+remove('evil')from(myHeart);
+
+console.log(myHeart);
+
+function remove(item)from(array) {
+    array.splice(array.indexOf(item), 1);
+    console.log(`Now I removed the ${item} in it.`);
+}

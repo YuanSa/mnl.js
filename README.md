@@ -1,6 +1,6 @@
 # mnl.js
 
-**仿自然语言JS函数（仿生函数命名法）**
+**仿自然语言 JS 函数（仿生函数命名法）**
 
 **Mock Natural Language JS Function**
 
@@ -43,21 +43,37 @@ Replace parenthesis in functions' name `(para)` with `__x__`, then add the paras
 **仿生写法 MNL Style**
 
 ```js
-function deleteThe(i)ItemFrom(arr) {
-  return arr.splice(i, 1)
+
+let myHeart = ['kind', 'evil', 'happy'];
+
+remove('evil')from(myHeart);
+
+console.log(myHeart);
+
+function remove(item)from(array) {
+    array.splice(array.indexOf(item), 1);
+    console.log(`Now I removed the ${item} in it.`);
 }
 ```
 
 **编译写法 Comiled Style**
 
 ```js
-function deleteThe__x__ItemFrom__x__(i, arr) {
-  return arr.splice(i, 1)
+
+let myHeart = ['kind', 'evil', 'happy'];
+
+remove__x__from('evil',myHeart);
+
+console.log(myHeart);
+
+function remove__x__from(item,array) {
+    array.splice(array.indexOf(array.indexOf(item), 1);
+    console.log(`Now I removed the ${item} in it.`);
 }
 ```
 
 ## 命名规则 Naming Convention
 
-建议使用camelCase或under_score_case。使用camelCase是为了兼容，使用under_score_case是为了让参数与函数名划分更清晰。
+建议使用 camelCase 或 under_score_case。使用 camelCase 是为了兼容，使用 under_score_case 是为了让参数与函数名划分更清晰。
 
 It's recommanded to use camelCase or under_score_case to name a var. Using camelCase is for compatible, while under_score_case is for clearer devision between paras and function name.
