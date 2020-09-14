@@ -1,7 +1,8 @@
 # mnl.js
-*仿自然语言JS函数（仿生函数命名法）*
 
-*Mock Natural Language JS Function*
+**仿自然语言JS函数（仿生函数命名法）**
+
+**Mock Natural Language JS Function**
 
 使用近似自然语言的语法编写函数名。
 
@@ -39,14 +40,16 @@ function the(mode)ValueBetween(a,b) {
 
 Replace parenthesis in functions' name `(para)` with `__x__`, then add the paras behined one by one.
 
-*仿生写法 MNL Style *
+**仿生写法 MNL Style**
+
 ```js
 function deleteThe(i)ItemFrom(arr) {
   return arr.splice(i, 1)
 }
 ```
 
-*编译写法 Comiled Style*
+**编译写法 Comiled Style**
+
 ```js
 function deleteThe__x__ItemFrom__x__(i, arr) {
   return arr.splice(i, 1)
