@@ -37,7 +37,8 @@ function the(mode)ValueBetween(a,b) {
 ## Bugs
 
 1. 函数调用、声明样的字符串也会被编译；
-2. 参数括号内不能嵌套括号。
+2. 参数括号内不能嵌套括号；
+3. 无法区分普通函数与只有尾括号的仿生函数。
 
 ## 实现 How to
 
@@ -82,3 +83,7 @@ function remove__x__from(item,array) {
 建议使用 camelCase 或 under_score_case。使用 camelCase 是为了兼容，使用 under_score_case 是为了让参数与函数名划分更清晰。
 
 It's recommanded to use camelCase or under_score_case to name a var. Using camelCase is for compatible, while under_score_case is for clearer devision between paras and function name.
+
+## 更新记录
+
+-   v0.1.1 2020/09/14 尾括号都将被视作仿生函数了。

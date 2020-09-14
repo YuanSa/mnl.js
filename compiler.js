@@ -1,5 +1,5 @@
 /*
-// MNL.js v0.1.0
+// MNL.js v0.1.1
 //
 // by 杨子涵 <yang.zihan@columbia.edu>
 // the 1th version updated at 2020/09/14
@@ -42,7 +42,9 @@ function compile(sourceCode) {
 function nameAfterCompiling(match) {
     match = match.trim();
     match.search(/\([\w\,\s'"`\(\)]*?\)/g);
-    const solidPart = match.replace(/\([\w\,\s'"`\(\)]*?\)/g, "__x__").replace(/__x__$/g, "");
+    const solidPart = match
+        .replace(/\([\w\,\s'"`\(\)]*?\)/g, "__x__")
+        .replace(/__x____x__$/g, "__x__");
     let paraList = [];
     let start = 0;
     while (start < match.length) {
