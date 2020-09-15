@@ -7,6 +7,8 @@ console.log(`I born with ${myHeart.join(', ')}.`);
 
 remove__x__from('evil',myHeart);
 
+"remove__x__from('evil',myHeart);";
+
 console.log(`Now, I have only ${myHeart.join(', ')} in my heart.\n`);
 
 function remove__x__from(item,array) {

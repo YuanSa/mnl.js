@@ -1,5 +1,7 @@
 # mnl.js
 
+`v 0.3.0`
+
 **JS 仿生函数命名法**
 
 **Mock Natural Language JS Function**
@@ -36,9 +38,9 @@ function the(mode)ValueBetween(a,b) {
 
 ## Bugs
 
-1. 函数调用、声明样的字符串也会被编译；
-2. 参数括号内不能嵌套括号；
-3. 无法区分普通函数与只有尾括号的仿生函数。
+关于 _complier.js_ 编译器的 bug：
+
+1. 字符串内的代码也会被编译
 
 ## 实现 How to
 
@@ -86,4 +88,4 @@ It's recommanded to use camelCase or under_score_case to name a var. Using camel
 
 ## 更新记录
 
--   v0.1.1 2020/09/14 尾括号都将被视作仿生函数了。
+-   v0.3.0 2020/09/15 发布
