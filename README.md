@@ -51,35 +51,26 @@ Replace parenthesis in functions' name `(para)` with `__x__`, then add the paras
 **仿生代码 MNL Codes**
 
 ```mnljs
-console.log('\nThis is the sample code for MNL.js\n');
-
 let myHeart = ['kind', 'evil', 'happy'];
-
 console.log(`I born with ${myHeart.join(', ')}.`);
 
 remove('evil')from(myHeart);
-
-console.log(`Now, I have only ${myHeart.join(', ')} in my heart.\n`);
+console.log(`Now, I have only ${myHeart.join(', ')} in my heart.`);
 
 function remove(item)from(array) {
     array.splice(array.indexOf(item), 1);
     console.log(`Now I removed the ${item} in it.`);
 }
-
 ```
 
 **编译后代码 Compiled Codes**
 
 ```js
-console.log("\nThis is the sample code for MNL.js\n");
-
 let myHeart = ["kind", "evil", "happy"];
-
 console.log(`I born with ${myHeart.join(", ")}.`);
 
 remove__x__from("evil", myHeart);
-
-console.log(`Now, I have only ${myHeart.join(", ")} in my heart.\n`);
+console.log(`Now, I have only ${myHeart.join(", ")} in my heart.`);
 
 function remove__x__from(item, array) {
     array.splice(array.indexOf(item), 1);
@@ -90,13 +81,9 @@ function remove__x__from(item, array) {
 **运行结果**
 
 ```
-
-This is the sample code for MNL.js
-
 I born with kind, evil, happy.
 Now I removed the evil in it.
 Now, I have only kind, happy in my heart.
-
 ```
 
 ## 命名规则 Naming Convention
