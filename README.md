@@ -48,36 +48,55 @@ function the(mode)ValueBetween(a,b) {
 
 Replace parenthesis in functions' name `(para)` with `__x__`, then add the paras behined one by one.
 
-**仿生写法 MNL Style**
+**仿生代码 MNL Codes**
 
-```js
+```mnljs
+console.log('\nThis is the sample code for MNL.js\n');
 
 let myHeart = ['kind', 'evil', 'happy'];
 
+console.log(`I born with ${myHeart.join(', ')}.`);
+
 remove('evil')from(myHeart);
 
-console.log(myHeart);
+console.log(`Now, I have only ${myHeart.join(', ')} in my heart.\n`);
 
 function remove(item)from(array) {
     array.splice(array.indexOf(item), 1);
     console.log(`Now I removed the ${item} in it.`);
 }
+
 ```
 
-**编译写法 Comiled Style**
+**编译后代码 Compiled Codes**
 
 ```js
+console.log("\nThis is the sample code for MNL.js\n");
 
-let myHeart = ['kind', 'evil', 'happy'];
+let myHeart = ["kind", "evil", "happy"];
 
-remove__x__from('evil',myHeart);
+console.log(`I born with ${myHeart.join(", ")}.`);
 
-console.log(myHeart);
+remove__x__from("evil", myHeart);
 
-function remove__x__from(item,array) {
-    array.splice(array.indexOf(array.indexOf(item), 1);
+console.log(`Now, I have only ${myHeart.join(", ")} in my heart.\n`);
+
+function remove__x__from(item, array) {
+    array.splice(array.indexOf(item), 1);
     console.log(`Now I removed the ${item} in it.`);
 }
+```
+
+**运行结果**
+
+```
+
+This is the sample code for MNL.js
+
+I born with kind, evil, happy.
+Now I removed the evil in it.
+Now, I have only kind, happy in my heart.
+
 ```
 
 ## 命名规则 Naming Convention
@@ -88,4 +107,4 @@ It's recommanded to use camelCase or under_score_case to name a var. Using camel
 
 ## 更新记录
 
--   v0.3.0 2020/09/15 发布
+-   v0.3.0 2020/09/15 发布，修改例程
